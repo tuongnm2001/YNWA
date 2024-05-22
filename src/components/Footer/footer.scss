@@ -1,0 +1,11 @@
+/* CSS cho Footer */
+.ant-layout-footer {
+    position          : fixed;
+    bottom            : 0;
+    width             : 100%;
+    text-align        : center;
+    background-color  : #fff;
+    /* Chỉnh màu nền của footer tại đây */
+    border-top        : 1px solid #e8e8e8;
+    /* Thêm đường viền trên footer nếu cần */
+}

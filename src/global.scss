@@ -1,0 +1,71 @@
+.cart-container {
+    margin-top  : 20px;
+
+    .content-up {
+        display          : flex;
+        justify-content  : space-between;
+        margin-top       : 10px;
+        gap              : 20px;
+
+        .content-left-cart {
+            display      : flex;
+            gap          : 10px;
+            align-items  : flex-start;
+
+            .img-cart {
+                img {
+                    height  : 41px;
+                    width   : 41px;
+                }
+            }
+
+            .mainText-cart {
+                width          : 200px; //Đặt chiều rộng tối đa của phần tử
+                white-space    : nowrap; // Ngăn chữ từ bị xuống dòng
+                overflow       : hidden; //Ẩn nội dung bị tràn
+                text-overflow  : ellipsis; //Hiển thị dấu ba chấm (...)
+            }
+
+        }
+
+        .price-cart {
+            color  : #ff4d4f;
+        }
+    }
+
+    .content-down {
+        margin-top       : 20px;
+        display          : flex;
+        justify-content  : end;
+    }
+}
+
+.cart-empty {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    padding         : 60px;
+    text-align      : center;
+
+    .icon-cart-empty {
+        font-size  : 40px;
+        color      : rgb(79, 188, 172);
+    }
+
+    .text-cart-empty {
+        margin-top  : 10px;
+        font-size   : 16px;
+        color       : #27272a;
+    }
+}
+
+.custom-title-cart {
+    margin-bottom  : 10px;
+    color          : #00000042;
+}
+
+// custom form thanh toán
+.custom-form .ant-form-item {
+    margin-bottom  : 0;
+    /* Adjust this value as needed */
+}

@@ -1,0 +1,32 @@
+.header-table-container {
+    display          : flex;
+    justify-content  : space-between;
+
+    .table-list-user {
+        font-size    : 18px;
+        font-weight  : 500;
+    }
+
+    .button-header {
+        display  : flex;
+        gap      : 10px;
+    }
+
+
+    /* CSS cho màn hình nhỏ (di động) */
+    @media only screen and (max-width: 670px) {
+        display  : flex;
+        gap      : 30px;
+
+        .button-header {
+            flex-wrap  : wrap;
+            gap        : 10px;
+        }
+    }
+}
+
+.btn-action {
+    display  : flex;
+    gap      : 15px;
+    cursor   : pointer;
+}

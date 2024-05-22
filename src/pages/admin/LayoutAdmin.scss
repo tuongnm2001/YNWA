@@ -1,0 +1,62 @@
+.dropdown {
+    float          : right;
+    padding-right  : 40px;
+}
+
+
+.footer-custom {
+    position          : relative;
+    bottom            : 0px;
+    background-color  : #f5f5f5;
+    border            : 0;
+    width             : auto;
+    padding-top       : 0;
+
+}
+
+.rotating-icon {
+    animation  : rotate 5s linear infinite;
+    /* Hiệu ứng quay */
+    color      : #696cff;
+    /* Màu của icon */
+}
+
+@keyframes rotate {
+    from {
+        transform  : rotate(0deg);
+        /* Bắt đầu từ góc 0 độ */
+    }
+
+    to {
+        transform  : rotate(360deg);
+        /* Kết thúc ở góc 360 độ */
+    }
+}
+
+/* Default styles - show on desktop */
+.toggle {
+    display  : inline-block;
+}
+
+.toggle-mobile {
+    display  : none;
+}
+
+@media (max-width: 1024px) {
+    .toggle {
+        display  : none;
+
+    }
+
+    .dropdown {
+        display  : inline-block;
+    }
+
+    .toggle-mobile {
+        display  : inline-block;
+    }
+
+    .sider {
+        display  : none;
+    }
+}

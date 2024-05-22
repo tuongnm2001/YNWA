@@ -1,0 +1,14 @@
+.modal-Img .image-gallery-image {
+    height         : 400px; //Đặt chiều cao tối đa
+    width          : 100%; //Chiều rộng tự động điều chỉnh
+    margin-bottom  : 20px;
+}
+
+/* CSS để tùy chỉnh tiêu đề trong Modal */
+.custom-modal-gallery .ant-modal-header {
+    color          : #000;
+    font-size      : 17px;
+    border-bottom  : none;
+    text-align     : right;
+    margin-bottom  : 30px;
+}

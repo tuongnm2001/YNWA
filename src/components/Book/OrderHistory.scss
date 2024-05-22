@@ -1,0 +1,14 @@
+.order-history-container {
+    min-height  : 410px; //Chiều cao tối thiểu
+    max-height  : 100vh; //Chiều cao tối đa, ví dụ 100% chiều cao viewport
+    overflow-y  : auto; //Thêm thanh cuộn dọc khi nội dung tràn
+    overflow    : hidden; //Ẩn thanh cuộn
+
+    .title-order-history {
+        font-size    : 24px;
+        font-weight  : 600;
+        color        : #787878;
+        padding      : 20px 10px;
+        font-family  : sans-serif;
+    }
+}

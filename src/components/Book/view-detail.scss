@@ -1,0 +1,220 @@
+.view-detail-container {
+
+    .view-detail-content-left {
+        padding           : 20px;
+        background-color  : #ffffff;
+        border-radius     : 8px;
+        cursor            : pointer;
+
+        /* CSS để điều chỉnh kích thước hình ảnh trong thư viện */
+        .custom-image-gallery .image-gallery-image {
+            height         : 450px; //Đặt chiều cao tối đa
+            width          : 100%; //Chiều rộng tự động điều chỉnh
+            margin-bottom  : 20px;
+        }
+    }
+
+    .view-detail-content-right {
+        padding           : 20px;
+        background-color  : #ffffff;
+        border-radius     : 8px;
+        display           : flex;
+        flex-direction    : column;
+        gap               : 15px;
+
+        .author {
+            color        : #242424;
+            font-size    : 15px;
+            font-weight  : 400;
+        }
+
+        .title {
+            color        : #27272a;
+            font-size    : 20px;
+            font-weight  : 500;
+            line-height  : 30px;
+            display      : block;
+        }
+
+        .rating {
+            display      : flex;
+            gap          : 5px;
+            align-items  : center;
+
+            .sold {
+                color      : #787878;
+                font-size  : 14px;
+            }
+        }
+
+        .price {
+            color        : #27272a;
+            font-size    : 24px;
+            font-weight  : 600;
+            line-height  : 36px;
+        }
+
+        .cate {
+            display  : flex;
+            gap      : 35px;
+        }
+
+        .delivery {
+            display  : flex;
+            gap      : 35px;
+
+            .right-side {
+                display      : flex;
+                align-items  : center;
+                gap          : 5px;
+            }
+        }
+
+        .quantity {
+            display     : flex;
+            gap         : 35px;
+            margin-top  : 15px;
+
+            .right-side {
+                display  : flex;
+
+                .btn-minus,
+                .btn-plus {
+                    align-items      : center;
+                    background       : transparent;
+                    border           : 0;
+                    border           : 1px solid #00000017;
+                    border-radius    : 2px;
+                    color            : #000000cc;
+                    cursor           : pointer;
+                    display          : flex;
+                    font-size        : .875rem;
+                    font-weight      : 300;
+                    height           : 32px;
+                    justify-content  : center;
+                    letter-spacing   : 0;
+                    line-height      : 1;
+                    outline          : none;
+                    transition       : background-color .1s cubic-bezier(.4, 0, .6, 1);
+                    width            : 32px;
+                }
+
+                .inputValue {
+                    border         : 1px solid #00000017;
+                    border-left    : 0;
+                    border-radius  : 0;
+                    border-right   : 0;
+                    box-sizing     : border-box;
+                    cursor         : text;
+                    font-size      : 16px;
+                    font-weight    : 400;
+                    height         : 32px;
+                    text-align     : center;
+                    width          : 50px;
+                    outline        : none;
+                }
+            }
+        }
+
+        .buy {
+            margin-top  : 15px;
+            display     : flex;
+            gap         : 15px;
+            flex-wrap   : wrap;
+
+            .cart {
+                cursor            : pointer;
+                align-items       : center;
+                background-color  : #fff;
+                border-color      : #0a68ff;
+                border-radius     : 4px;
+                border-style      : solid;
+                border-width      : 0.666667px;
+                color             : #0a68ff;
+                display           : flex;
+                gap               : 8px;
+                justify-content   : center;
+                line-height       : 24px;
+                padding           : 8px 40px;
+                text-align        : center;
+            }
+
+            .now {
+                cursor            : pointer;
+                align-items       : center;
+                background-color  : #ff424e;
+                border-radius     : 4px;
+                color             : #fff;
+                display           : flex;
+                font-weight       : 300;
+                gap               : 8px;
+                justify-content   : center;
+                line-height       : 24px;
+                padding           : 8px 68px;
+                text-align        : center;
+                border            : none;
+            }
+
+            /* Media query cho màn hình nhỏ hơn hoặc bằng 600px (thường là kích thước màn hình điện thoại) */
+            @media (max-width: 600px) {
+
+                button.cart,
+                button.now {
+                    width  : 100%;
+                }
+            }
+        }
+    }
+
+    .product-same {
+        padding           : 20px;
+        background-color  : #ffffff;
+        border-radius     : 8px;
+        margin-top        : 20px;
+
+        .title-product-same {
+            color        : #27272a;
+            font-size    : 16px;
+            font-weight  : 600;
+            line-height  : 24px;
+        }
+
+        .content-product-same {
+            display    : flex;
+            flex-wrap  : wrap;
+            gap        : 15px;
+        }
+    }
+}
+
+.cate,
+.delivery,
+.quantity {
+    .left-side {
+        color        : #757575;
+        font-size    : 14px;
+        font-weight  : 400;
+        width        : 80px;
+    }
+}
+
+// css product same
+.ant-card-body {
+    display         : flex !important;
+    flex-direction  : column !important;
+    gap             : 5px !important;
+    padding         : 15px !important;
+}
+
+.ant-card-meta-title {
+    font-size      : 12px !important;
+    margin-bottom  : 0 !important;
+}
+
+
+//css thumbnail
+.image-gallery-thumbnail img {
+    object-fit  : contain;
+    width       : 82px;
+    height      : 82px;
+}

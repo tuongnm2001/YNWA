@@ -1,0 +1,16 @@
+html,
+body {
+    height   : 100%;
+    margin   : 0;
+    padding  : 0;
+}
+
+
+.layout-app {
+    background-color       : #f5f5fa;
+    // height            : 100vh;
+
+    .outlet {
+        padding  : 20px 24px;
+    }
+}

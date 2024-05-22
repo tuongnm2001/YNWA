@@ -1,0 +1,104 @@
+.navbar-container {
+    padding           : 0 24px;
+    background-color  : #ffffff;
+    font-family       : sans-serif;
+
+    .header {
+        padding      : 10px 0;
+        display      : flex;
+        align-items  : center;
+
+        .logo {
+            cursor        : pointer;
+            display       : flex;
+            align-items   : center;
+            font-size     : 50px;
+            color         : #32475c;
+            margin-right  : 5px;
+            gap           : 10px;
+        }
+
+        .title {
+            font-size     : 35px;
+            font-weight   : 700;
+            color         : #32475c;
+            margin-right  : 28px;
+        }
+
+        .header-item-right {
+            display          : flex;
+            align-items      : center;
+            margin-left      : 30px;
+            gap              : 18px;
+            width            : 30%;
+            justify-content  : end;
+
+            .cart {
+                cursor   : pointer;
+                display  : flex;
+                gap      : 18px;
+
+                &:hover {
+                    opacity  : 0.8;
+                }
+            }
+
+            .account {
+                cursor         : pointer;
+                color          : #808089;
+                padding        : 8px 14px;
+                border-radius  : 8px;
+                font-family    : sans-serif;
+                font-weight    : 500;
+                font-size      : 15px;
+
+                .icon {
+                    font-size     : 20px;
+                    margin-right  : 5px;
+                }
+            }
+        }
+
+        .account:hover {
+            background-color  : #27272a1f;
+        }
+    }
+}
+
+/* Định nghĩa các styles cho màn hình điện thoại di động */
+@media only screen and (max-width: 767px) {
+
+    .search-header {
+        width  : 100%;
+    }
+
+    .header {
+        padding  : 10px 20px !important;
+    }
+
+    .title,
+    .logo,
+    .account,
+    .dropdown-homepage,
+    .dropdown {
+        display  : none;
+    }
+
+    .menu-icon {
+        display    : block;
+        font-size  : 1.2rem;
+        color      : #8c8c8c;
+        /* Hiển thị content mobile */
+    }
+
+    .ant-drawer-title {
+        color  : #8c8c8c !important;
+    }
+}
+
+/* Ẩn content mobile trên màn hình tablet và desktop */
+@media only screen and (min-width: 768px) {
+    .menu-icon {
+        display  : none;
+    }
+}

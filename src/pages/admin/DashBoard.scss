@@ -1,0 +1,32 @@
+.dashboard-card {
+    width      : 100%;
+    display    : flex;
+    flex-wrap  : wrap;
+
+    .dashboard-card-content {
+        display          : flex;
+        justify-content  : space-between;
+        align-items      : center;
+
+        .dashboard-card-details {
+            flex-shrink  : 0;
+
+            .dashboard-card-title {
+                font-size    : 1.5vw;
+                font-weight  : 600;
+                color        : '#69707a';
+            }
+
+            .dashboard-card-value {
+                font-size  : 24px;
+                color      : #5a5c69;
+                /* Adjust color as needed */
+            }
+        }
+
+        .dashboard-card-icon {
+            flex-grow   : 1;
+            text-align  : right;
+        }
+    }
+}

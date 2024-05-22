@@ -1,0 +1,255 @@
+.order-container {
+    margin              : auto;
+    width               : 100%;
+    // box-shadow     : 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius       : 1rem;
+    border              : transparent;
+
+    @media (max-width: 600px) {
+        .step {
+            display         : flex;
+            flex-direction  : row;
+        }
+    }
+
+
+    .content-left-order {
+        background-color       : #ffffff;
+        border-radius          : 1rem;
+        padding                : 20px 30px;
+        box-shadow             : 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        min-height             : 401px;
+        /* Chiều cao tối thiểu */
+        // max-height        : 100vh;
+        /* Chiều cao tối đa, ví dụ 100% chiều cao viewport */
+        overflow-y             : auto;
+        /* Thêm thanh cuộn dọc khi nội dung tràn */
+        overflow               : hidden;
+
+        .content-up-order {
+            display          : flex;
+            justify-content  : space-between;
+            align-items      : center;
+
+            .title-left-order {
+                font-size    : 24px;
+                font-weight  : 600;
+                color        : #27272a;
+            }
+
+            .title-right-order {
+                font-size    : 14px;
+                font-weight  : 500;
+                color        : #757575;
+            }
+        }
+
+        .des-cart {
+            margin-top   : 20px;
+            font-size    : 16px;
+            font-weight  : 500;
+            color        : #888;
+            display      : flex;
+            flex-wrap    : wrap;
+
+            .text-name-cart {
+                width  : 47.27949%;
+            }
+
+            .price-cart {
+                width  : 15.88022%;
+            }
+
+            .quantity-cart {
+                width  : 19.4265%;
+            }
+
+            .total-cart {
+                width  : 11.43557%;
+            }
+        }
+
+        .content-down-order {
+            display         : flex;
+            flex-direction  : column;
+
+            .product-order {
+                display               : flex;
+                align-items           : center;
+                // flex-wrap        : wrap;
+                justify-content       : space-between;
+
+                .img-order {
+                    display           : flex;
+                    align-items       : center;
+                    // width        : 48.27949%;
+                    width             : 320px;
+
+                    img {
+                        width       : 60px;
+                        height      : 60px;
+                        object-fit  : contain;
+                    }
+                }
+
+                // .price-order {
+                //     width  : 17.88022%;
+                // }
+
+                // .quantity-order {
+                //     width  : 19.4265%;
+                // }
+
+                // .total-price-order {
+                //     width  : 11.43557%;
+                // }
+            }
+        }
+
+        .cart-empty {
+            display         : flex;
+            flex-direction  : column;
+            gap             : 8px;
+            height          : 10rem;
+            margin          : 50px;
+
+            img {
+                width   : 180px;
+                height  : 180px;
+            }
+
+            .text-cart-empty {
+                font-weight  : 500;
+                color        : #00000066;
+            }
+        }
+    }
+
+    .content-right-order {
+        display         : flex;
+        flex-direction  : column;
+        box-shadow      : 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius   : 1rem;
+        /* Đảm bảo container chiếm toàn bộ chiều cao */
+
+        .summary-order {
+            display         : flex;
+            flex-direction  : column;
+            flex-grow       : 1;
+            /* Cho phép phần tử này mở rộng và chiếm không gian còn lại */
+
+            padding           : 20px;
+            border-radius     : 1rem;
+            background-color  : #ffffff;
+
+            .title-content-right-order {
+                font-size    : 24px;
+                font-weight  : 600;
+                color        : #27272a;
+            }
+
+            .content-down-summary {
+                display         : flex;
+                flex-direction  : column;
+                gap             : 20px;
+
+                .total-price-summary {
+                    margin-bottom    : auto;
+                    display          : flex;
+                    justify-content  : space-between;
+                    font-size        : 16px;
+                }
+            }
+
+            Button {
+                margin-top  : auto;
+                /* Đảm bảo nút luôn nằm ở phía dưới */
+            }
+        }
+    }
+}
+
+
+
+.content-down-order {
+    display          : flex;
+    align-items      : center;
+    justify-content  : space-between;
+    margin-bottom    : 10px;
+}
+
+.product-order {
+    display      : flex;
+    align-items  : center;
+    width        : 100%;
+    flex-wrap    : nowrap;
+}
+
+.img-order {
+    display      : flex;
+    align-items  : center;
+}
+
+.img-order img {
+    width         : 50px;
+    /* or another fixed size */
+    height        : auto;
+    margin-right  : 10px;
+}
+
+.mainText-order {
+    font-size  : 1.2vw;
+    /* use viewport width for responsive text size */
+}
+
+
+.price-order,
+.quantity-order,
+.total-price-order,
+.icon-delete-order {
+    margin-left  : 10px;
+    font-size    : 1.2vw;
+    /* use viewport width for responsive text size */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+
+    .mainText-order,
+    .price-order,
+    .quantity-order,
+    .total-price-order,
+    .icon-delete-order {
+        font-size  : 2.5vw;
+        /* Increase font size on smaller screens */
+    }
+
+    .img-order img {
+        width  : 40px;
+        /* Adjust image size for smaller screens */
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .mainText-order,
+    .price-order,
+    .quantity-order,
+    .total-price-order,
+    .icon-delete-order {
+        font-size  : 1.5vw;
+        /* Increase font size even more on very small screens */
+    }
+
+    .img-order img {
+        width  : 30px;
+        /* Further adjust image size for very small screens */
+    }
+
+    .quantity-order .ant-input-number-input {
+        font-size  : 2.5vw;
+        /* Adjust font size inside InputNumber */
+    }
+}

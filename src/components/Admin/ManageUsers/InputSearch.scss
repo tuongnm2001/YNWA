@@ -1,0 +1,16 @@
+.input-container {
+    border-radius  : 8px;
+    padding        : 0px;
+    background     : rgb(255, 255, 255);
+    margin-bottom  : 25px;
+
+    .form {
+        padding  : 25px 16px;
+
+        .btn-inputSearch {
+            display          : flex;
+            gap              : 10px;
+            justify-content  : right;
+        }
+    }
+}
